@@ -10,11 +10,11 @@ body {
 }
 
 .nav-link {
-    color: #fff !important;
+    color: #ffcc00 !important;
 }
 
 .nav-link:hover {
-    color: #ffcc00 !important; /* Golden */
+    color: blue !important; /* Golden */
 }
 
 .jumbotron {
