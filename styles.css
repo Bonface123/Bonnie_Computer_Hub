@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: #004080; /* Dark Blue */
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important; /* Golden */
+}
+
+.jumbotron {
+    background-color: #e6f2ff; /* Light Blue */
+    color: #004080; /* Dark Blue */
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    background-color: #004080; /* Dark Blue */
+    color: white;
+}
+
+.btn-primary {
+    background-color: #004080; /* Dark Blue */
+    border-color: #004080;
+}
+
+.btn-primary:hover {
+    background-color: #003366; /* Darker Blue */
+    border-color: #003366;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.card-deck .card {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 0;
+}
+
+.form-group label {
+    color: #004080; /* Dark Blue */
+}
+
+/* Additional Spacing */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}

@@ -1,0 +1,36 @@
+
+
+            <!-- Content will be loaded here -->
+            <div class="jumbotron text-center">
+                <h1>Welcome to Bonnie Computer Hub</h1>
+                <p>Your one-stop shop for all things computer-related</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Bonnie Computer Class</h3>
+                    <p>Comprehensive computer courses for all skill levels.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Bonnie Computer Services</h3>
+                    <p>Expert repair, maintenance, and upgrade services.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Bonnie Software Development</h3>
+                    <p>Custom software solutions tailored to your needs.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                $('#content').load(page);
+            });
+        });
+    </script>
+</body>
+</html>

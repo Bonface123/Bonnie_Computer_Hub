@@ -1,0 +1,36 @@
+
+            <!-- Content will be loaded here -->
+
+            <h2>Blog</h2>
+<p>Read our latest posts about computer education, technology trends, and troubleshooting tips.</p>
+<div class="card-deck">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Post Title 1</h3>
+            <p class="card-text">A brief summary of the blog post content goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Post Title 2</h3>
+            <p class="card-text">A brief summary of the blog post content goes here.</p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                $('#content').load(page);
+            });
+        });
+    </script>
+</body>
+</html>
+

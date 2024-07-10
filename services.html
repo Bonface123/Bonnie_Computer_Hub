@@ -1,0 +1,40 @@
+
+
+            <!-- Content will be loaded here -->
+            <h2>Our Services</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Bonnie Computer Class</h3>
+                        <p class="card-text">We offer a comprehensive range of computer courses for all skill levels, from basic computer literacy to advanced programming.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Bonnie Computer Services</h3>
+                        <p class="card-text">Our technicians provide expert repair, maintenance, and upgrade services for desktops, laptops, and peripherals.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Bonnie Software Development</h3>
+                        <p class="card-text">We design and develop custom software solutions tailored to meet the specific needs of our clients.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                $('#content').load(page);
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonnie Computer Hub</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">BONNIE COMPUTER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <ul class="nav nav-tabs justify-content-center bg-dark">
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="services.html">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="schedule.html">Class Schedule</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="booking.html">Service Booking</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="quote.html">Request a Quote</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#" data-page="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="container mt-5">
+        <div id="content">
+            <!-- Initial content for the home page -->
+            <div class="jumbotron text-center">
+                <h1>Welcome to Bonnie Computer Hub</h1>
+                <p>Your one-stop shop for all things computer-related</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Bonnie Computer Class</h3>
+                    <p>Comprehensive computer courses for all skill levels.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Bonnie Computer Services</h3>
+                    <p>Expert repair, maintenance, and upgrade services.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Bonnie Software Development</h3>
+                    <p>Custom software solutions tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        Bonnie Computer Hub &copy; 2024
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                $('#content').load(page);
+            });
+        });
+    </script>
+</body>
+</html>

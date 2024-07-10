@@ -1,0 +1,43 @@
+
+            <!-- Initial content for the home page -->
+            <h2>Class Schedule</h2>
+<p>Here you can find the schedule for our upcoming classes. Click on a class to enroll.</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Enroll</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Basic Computer Literacy</td>
+            <td>2024-07-10</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td><button class="btn btn-primary">Enroll</button></td>
+        </tr>
+        <tr>
+            <td>Advanced Programming</td>
+            <td>2024-07-12</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td><button class="btn btn-primary">Enroll</button></td>
+        </tr>
+    </tbody>
+</table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var page = $(this).data('page');
+                $('#content').load(page);
+            });
+        });
+    </script>
+</body>
+</html>
