@@ -1,78 +1,184 @@
-/* General Styles */
-body {
+
+@keyframes anim {
+    from { margin-top: 0px; }
+    to { margin-top: 100px; }
+  }
+  img {
+    animation-name: anim;
+    animation-duration: 30s; /* Adjusted for a more realistic animation duration */
+    border-radius: 10px; /* Added border-radius for rounded corners */
+  }
+  body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-.navbar {
-    background-color: #004080; /* Dark Blue */
-}
-
-.nav-link {
-    color: #ffcc00 !important;
-}
-
-.nav-link:hover {
-    color: blue !important; /* Golden */
-}
-
-.jumbotron {
-    background-color: #e6f2ff; /* Light Blue */
-    color: #004080; /* Dark Blue */
-    padding: 2rem 1rem;
-    border-radius: 5px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-footer {
-    background-color: #004080; /* Dark Blue */
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0056b3;
     color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  nav {
+    margin-bottom: 20px;
+  }
+  .navbar-nav .nav-link {
+    color: #007bff;
+    font-weight: bold;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #0056b3;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .chip {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .chip img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  #contact-info, #quick-links {
+    margin-top: 20px;
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  #call-to-action {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+  }
+  #call-to-action .btn {
+    margin-top: 10px;
+  }
+  #our-programs img, #testimonials img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #contact-form {
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #contact-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  #contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #contact-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #contact-form button:hover {
+    background-color: #0056b3;
+  }
+  #call-to-action {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+  }
+  #call-to-action .btn {
+    margin-top: 10px;
+  }
+  #admissions-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #admissions-form {
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  #admissions-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  #admissions-form input, #admissions-form select, #admissions-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #admissions-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #admissions-form button:hover {
+    background-color: #388E3C;
+  }
+  #form-message {
+    margin-top: 10px;
+    color: green;
+  }
+.program {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
-.btn-primary {
-    background-color: #004080; /* Dark Blue */
-    border-color: #004080;
+.program img {
+  margin-right: 20px;
+  flex: 0 0 50%;
 }
-
-.btn-primary:hover {
-    background-color: #003366; /* Darker Blue */
-    border-color: #003366;
+.program-text {
+  flex: 0 0 50%;
 }
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.program h3 {
+  color: #0056b3;
 }
-
-.card-deck .card {
-    animation: slideIn 1s ease-in-out;
+.program h4 {
+  margin-top: 20px;
+  color: #0056b3;
 }
-
-@keyframes slideIn {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-/* Form Styles */
-.form-control {
-    border-radius: 0;
-}
-
-.form-group label {
-    color: #004080; /* Dark Blue */
-}
-
-/* Additional Spacing */
-.mt-5 {
-    margin-top: 3rem !important;
-}
-
-.p-4 {
-    padding: 1.5rem !important;
-}
-
-.text-center {
-    text-align: center !important;
+.program p {
+  color: black;
 }
